@@ -52,7 +52,7 @@ def process_dataset(json_path, select_cols, train_rate, csv_path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_path', dest='data_path',
-                        default='Digital_Music_5.json.gz',
+                        default='review_4.json',
                         help='Selected columns of above dataset in json format.')
     parser.add_argument('--select_cols', dest='select_cols', nargs='+',
                         default=['reviewerID', 'asin', 'reviewText', 'overall'])
